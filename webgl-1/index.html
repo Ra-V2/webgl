@@ -4,8 +4,13 @@
     <meta charset="utf-8" />
     <title>My test page</title>
   </head>
-  <body onload="Triangle();">
-    <canvas id="main-canvas" width="800" height="600"></canvas>
+  <body onload="LoadFigures();">
+    <canvas id="triangle-canvas" width="400" height="400"></canvas>
+    <canvas id="square-canvas" width="400" height="400"></canvas>
+    <canvas id="hexagon-canvas" width="400" height="400"></canvas>
+    <div style="display: flex; justify-content: center;">
+      <button onclick="ChangeColors();" style="background-color: gery; color: black; padding: 10px; margin-top: 10px;">Randomize Colors</button>
+    </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/gl-matrix@3/gl-matrix.js"></script>
   <script src="script.js"></script>
